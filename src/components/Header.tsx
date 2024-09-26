@@ -1,16 +1,37 @@
-import hesq from '../images/logo/hesq-logo.png'
 import { Link } from 'react-router-dom'
+import { useEffect, useMemo, useState } from 'react';
 
-export default function Header() {
-  const click = () => {
-    
+import hesq from '../images/logo/hesq-logo.png'
+import { IoMdMenu } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
   }
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
+  useMemo(() => {
+    if (windowWidth > 730) {
+      setIsOpen(false)
+    }
+  }, [windowWidth])
 
   return (
     <header>
       <div className='header-container'>
       </div>
-
+      <div className={isOpen ? 'dropdown-menu-container' : 'hidden'}></div>
       <div className='header-secondary-container'>
         <div className='header-content'>
           <Link to={'/'}>
@@ -18,16 +39,31 @@ export default function Header() {
               src={hesq} 
               alt="logo" 
               className='header-logo'
-              onClick={click}
             />
           </Link>
-          <span className='sidebar'>MENU</span>
-          <nav className='nav-content'>
-            <span>PRINCIPAL</span>
-            <span>SOBRE</span>
-            <span>SOLUÇÕES</span>
-            <span>CLIENTES</span>
-            <span>CONTATO</span>
+          <div className={isOpen ? 'menu-container-open' : 'menu-container'}>
+            <span className='menu'>MENU</span>
+            {isOpen ? (
+              <button className='close-menu-icon'
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <IoCloseSharp />
+              </button>
+            ) : (
+            <button className='menu-icon'
+              onClick={() => setIsOpen(!isOpen)}
+            > 
+              <IoMdMenu/> 
+            </button>
+            )}
+          </div>
+          
+          <nav className={isOpen ? 'dropdown-menu' : 'nav-content'}>
+            <Link to='/'>PRINCIPAL</Link>
+            <Link to='/'>SOBRE</Link>
+            <Link to='/'>SOLUÇÕES</Link>
+            <Link to='/'>CLIENTES</Link>
+            <Link to='/'>CONTATO</Link>
           </nav>
         </div>
       </div>
@@ -35,3 +71,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header
