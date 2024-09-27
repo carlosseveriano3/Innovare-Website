@@ -1,13 +1,13 @@
-import Banner from "./components/Banner"
-import Header from "./components/Header"
+import MainPage from "./pages/main-page/MainPage"
+import Header from "./components/header/Header"
 
 function App() {
 
   return (
-    <main>
-      <Header />
+    <main className="app">
+        <Header />
       <div className="layout-app">
-        <Banner />
+        <MainPage />
       </div>
     </main>
   )

@@ -1,0 +1,147 @@
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: .3s;
+}
+
+a:hover {
+  color: #d68848;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .1);
+  z-index: 999;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16rem;
+}
+
+.header-logo {
+  width: 13rem;
+}
+
+
+.nav-content {
+  display: flex;
+  gap: 1.7rem;
+  font-weight: 600;
+}
+
+.menu {
+  display: none;
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 870px) {
+  .header-secondary-container {
+    width: 90%;
+  }
+ 
+  .header-logo {
+    margin: 1.5rem;
+  }
+
+  .nav-content {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .header-secondary-container {
+    width: 70%;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-content {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3;
+  }
+
+  .menu {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    margin-top: 0.28rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .close-menu-icon {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    margin-top: 0.28rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .header-logo {
+    margin: 0;
+    z-index: 0;
+  }
+
+  .dropdown-menu-container {
+    background-color: #000000;
+    position: absolute;
+    right: 0;
+    width: 292px;
+    height: 184vh;
+    z-index: 1;
+  }
+
+  .dropdown-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    right: 7rem;
+    top: 100px;
+    z-index: 2;
+  }
+
+  .menu-container-open {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    right: 4rem;
+    top: 40px;
+    border-bottom: 2px solid;
+    z-index: 2;
+  }
+}

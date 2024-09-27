@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useMemo, useState } from 'react';
 
-import hesq from '../images/logo/hesq-logo.png'
+import hesq from '../../images/logo/hesq-logo.png'
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
+
+import './header.css'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +31,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className='header-container'>
-      </div>
       <div className={isOpen ? 'dropdown-menu-container' : 'hidden'}></div>
-      <div className='header-secondary-container'>
         <div className='header-content'>
           <Link to={'/'}>
             <img 
@@ -66,7 +65,6 @@ const Header = () => {
             <Link to='/'>CONTATO</Link>
           </nav>
         </div>
-      </div>
 
     </header>
   )

@@ -1,7 +1,9 @@
+import './main-page.css'
+
 const Banner = () => {
   return (
-    <section>
-      <span>
+    <section >
+      <span className="container">
         SUA SOLUÇÃO EM <br />
         ENGENHARIA <br />
         PREDIAL E INDUSTRIAL
