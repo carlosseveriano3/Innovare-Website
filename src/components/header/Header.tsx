@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className={isOpen ? 'dropdown-menu-container' : 'hidden'}></div>
+      <div className={isOpen ? 'dropdown-menu-container' : 'hide'}></div>
         <div className='header-content'>
           <Link to={'/'}>
             <img 
@@ -64,7 +64,7 @@ const Header = () => {
             <Link to='/'>CLIENTES</Link>
             <Link to='/'>CONTATO</Link>
           </nav>
-        </div>
+      </div>
 
     </header>
   )

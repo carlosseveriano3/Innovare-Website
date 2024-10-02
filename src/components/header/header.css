@@ -12,8 +12,15 @@ a:hover {
 
 header {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: rgba(255, 255, 255, .1);
+  min-height: 7.5rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(35, 35, 35, 0.667);
+  transition: .3s ease-in;
   z-index: 999;
 }
 
@@ -22,17 +29,20 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 16rem;
+  width: 100%;
+  max-width: 70rem;
+  height: 100%;
+  /* border: 2px solid; */
 }
 
 .header-logo {
   width: 13rem;
 }
 
-
 .nav-content {
   display: flex;
   gap: 1.7rem;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .menu {
@@ -48,28 +58,13 @@ header {
   display: none;
 }
 
-@media (max-width: 870px) {
-  .header-secondary-container {
-    width: 90%;
-  }
- 
-  .header-logo {
-    margin: 1.5rem;
-  }
-
-  .nav-content {
-    gap: 1rem;
-  }
-}
-
 @media (max-width: 730px) {
-  .header-secondary-container {
-    width: 70%;
-  }
 
   .header-content {
     display: flex;
     align-items: center;
+    margin: 0 5rem;
+    
   }
 
   .nav-content {
@@ -119,6 +114,7 @@ header {
     right: 0;
     width: 292px;
     height: 184vh;
+    transition: .3s ease;
     z-index: 1;
   }
 
@@ -143,5 +139,6 @@ header {
     top: 40px;
     border-bottom: 2px solid;
     z-index: 2;
+    transition: .3s ease-in-out;
   }
 }
