@@ -1,0 +1,22 @@
+.services {
+  position: relative;
+  height: 32.4rem;
+  /* border: 2px solid red; */
+}
+
+.services::before {
+  position: absolute;
+  content: '';
+  background: url(../../images/backgroung-images/middle-bg.jpg) no-repeat center center/cover;
+  width: 100vw;
+  height: 32.4rem;
+  z-index: -1;
+}
+
+.services .content {
+  width: 100vw;
+  height: 32.4rem;
+
+  background-color: rgba(242, 221, 99, .9);
+}
+

@@ -37,12 +37,13 @@ header {
 
 .header-logo {
   width: 13rem;
+  margin-top: 1rem;
 }
 
 .nav-content {
   display: flex;
   gap: 1.7rem;
-  /* font-weight: 600; */
+  margin-top: 1rem;
 }
 
 .menu {

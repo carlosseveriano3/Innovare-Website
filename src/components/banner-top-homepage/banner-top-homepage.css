@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  height: 29.2rem;
+  height: 27.1rem;
   /* border: 2px solid red; */
 }
 
@@ -9,7 +9,7 @@
   content: '';
   background: url(../../images/backgroung-images/top-bg.png) no-repeat center center/cover;
   width: 100vw;
-  height: 465px;
+  height: 27.1rem;
   z-index: -1;
   filter: brightness(19%);
 }
@@ -21,30 +21,33 @@
   justify-content: center;
   width: 62%;
   margin: 0 auto;
-  font-size: 2rem;
-  border: 2px solid red;
+  /* border: 2px solid chartreuse; */
+}
+
+.banner .paragraphs {
+  margin-top: 7.6rem;
 }
 
 .banner .content p:first-child {
   font-family: "Fredoka", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 370;
   letter-spacing: 0.6rem;
   color: #F2B600;
-  margin-bottom: -.7rem;
+  margin-bottom: -.8rem;
 }
 
 .banner .content p:nth-child(2) {
   font-family: "Kanit", system-ui;
   font-size: 3.5rem;
   font-weight: bold;
-  letter-spacing: 0.6rem;
-  margin-bottom: -.7rem;
+  letter-spacing: 0.7rem;
+  margin-bottom: -1rem;
 }
 
 .banner .content p:nth-child(3) {
   font-family: "Fredoka", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 370;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.44rem;
 }
