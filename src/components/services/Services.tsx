@@ -8,27 +8,94 @@ import "./services.css"
 const Services = () => {
   return (
     <section className="services">
-      <div className="content">
+      <div className="backgroud-middle-banner">
+        <div className='content'>
 
-        <div>
-          <img src={worker} alt="" />
-          <span>
-            CONSULTORIA, INSPEÇÃO E PROJETOS
-          </span>
-        </div>
+          <div className='cards worker'>
+            <div className='card-content'>
+              <div className='background-card'>
+                <img src={worker} alt="" />
+                <span>
+                  CONSULTORIA, INSPEÇÃO E PROJETOS
+                </span>
+                <ul>
+                  <li>Gestão de Projetos</li>
+                  <li>Avaliações, Planos, Assessoria Técnica</li>
+                  <li>Elaboração de Projetos</li>
+                  <li>Inspeção Predial e Industrial</li>
+                  <li>Perícia de Engenharia</li>
+                  <li>Plano de Manutenção</li>
+                </ul>
+                <button>
+                  Saiba Mais
+                </button>
+              </div>
+            </div>
+          </div>
 
-        <div>
-          <span>
-            ENERGIA
-          </span>
-        </div>
-        
-        <div>
-          <span>
-            INSTALAÇÃO, MANUTENÇÃO E FACILITIES
-          </span>
-        </div>
+          <div className='cards energy'>
+            <div className='card-content'>
+              <div className='background-card'>
+                <img src={energy} alt="" />
+                <span>
+                  ENERGIA
+                </span>
+                <ul>
+                  <li>Avaliação em Subestações</li>
+                  <li>PIE - Prontuário de Instalações Elétricas</li>
+                  <li>Comissionamento</li>
+                  <li>Eficiência Energética</li>
+                  <li>Medição de Energia</li>
+                </ul>
+                <button>
+                  Saiba Mais
+                </button>
+              </div>
+            </div>
+          </div>
           
+          <div className='cards facilities'>
+            <div className='card-content'>
+              <div className='background-card'>
+                <img src={facilities} alt="" />
+                <span>
+                  INSTALAÇÃO, MANUTENÇÃO E FACILITIES
+                </span>
+                <ul>
+                  <li>Gerenciamento</li>
+                  <li>Fornecimento de Mão de Obra</li>
+                  <li>Instalação e Manutenção</li>
+                  <li>Limpeza e Conservação</li>
+                  <li>Serviços de Apoio Administrativo</li>
+                </ul>
+                <button>
+                  Saiba Mais
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className='cards training'>
+            <div className='card-content'>
+              <div className='background-card'>
+                <img src={training} alt="" />
+                <span>
+                  TREINAMENTOS
+                </span>
+                <ul>
+                  <li>Formação de Brigada de Incêndio</li>
+                  <li>Prontuário de Instalações Elétrica</li>
+                  <li>Segurança em Subestações</li>
+                  <li>Normas Regulamentadoras</li>
+                </ul>
+                <button>
+                  Saiba Mais
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>    
       </div>
     </section>
   )
