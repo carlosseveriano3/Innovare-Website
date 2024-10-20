@@ -8,30 +8,36 @@
   position: absolute;
   content: '';
   background: url(../../images/background-images/middle-bg.jpg) no-repeat center center/cover;
-  width: 100vw;
+  width: 98vw;
   height: 32.4rem;
   z-index: -1;
 }
 
 .services .backgroud-middle-banner {
-  width: 100vw;
+  width: 100%;
   height: 32.4rem;
 
-  background-color: rgba(242, 221, 99, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(242, 221, 99, .95);
 }
 
 .services .content {
-  width: 65%;
-  margin: 0 auto;
-  height: 100%;
+  position: relative;
+  width: 61rem;
+  height: 32rem;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem 15rem;
   gap: .4rem;
-  padding: .1rem 0;
-  align-items: center;
 
   background-color: rgba(255, 255, 255, 0.67);
+
+  /* border: 2px solid red; */
 }
+
 .services .cards {
   position: relative;
   width: 100%;
@@ -47,7 +53,6 @@
   background: url(../../images/background-cards/card-1.jpg) no-repeat center center/cover;
   width: 130%;
   height: 130%;
-  z-index: 1;
 }
 
 .services .energy::before {
@@ -56,16 +61,14 @@
   background: url(../../images/background-cards/card-2.jpg) no-repeat center center/cover;
   width: 130%;
   height: 130%;
-  z-index: 1;
 }
 
 .services .facilities::before {
   position: absolute;
   content: '';
   background: url(../../images/background-cards/card-3.jpg) no-repeat center center/cover;
-  width: 130%;
-  height: 130%;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -73,12 +76,8 @@
   position: absolute;
   content: '';
   background: url(../../images/background-cards/card-4.jpeg) no-repeat center center/cover;
-  width: 130%;
-  height: 130%;
-  z-index: 1;
-}
-.services .card-content {
-  z-index: 3;
+  width: 100%;
+  height: 100%;
 }
 
 .worker .background-card {
@@ -90,9 +89,24 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 2rem 0;
 
-  background-color: rgba(199, 150, 2, .65);
-  z-index: 2;
+  background-color: rgba(199, 150, 2, .8);
+
+  /* border: 2px solid red; */
+}
+
+.services .worker img {
+  width: 98px;
+  height: 100px;
+}
+
+.services .title-worker-mobile {
+  display: none;
+}
+
+.services .title-worker-desktop {
+  display: block;
 }
 
 .energy .background-card {
@@ -104,9 +118,25 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: .4rem;
 
-  background-color: rgba(199, 150, 2, .65);
-  z-index: 2;
+  background-color: rgba(199, 150, 2, .8);
+  /* z-index: 2; */
+}
+
+.services .energy img {
+  width: 125px;
+  height: 125px;
+}
+
+.services .energy span {
+  position: relative;
+  bottom: 2.2rem;
+}
+
+.services .energy ul {
+  position: relative;
+  bottom: .7rem;
 }
 
 .facilities .background-card {
@@ -118,9 +148,20 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 2rem 0 1.5rem 0;
 
-  background-color: rgba(199, 150, 2, .65);
-  z-index: 2;
+  background-color: rgba(199, 150, 2, .8);
+  /* z-index: 2; */
+}
+
+.services .facilities img {
+  width: 94px;
+  height: 94px;
+}
+
+.services .facilities ul {
+  position: relative;
+  bottom: .75rem;
 }
 
 .training .background-card {
@@ -132,7 +173,237 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 1.5rem 0 .2rem 0;
 
-  background-color: rgba(199, 150, 2, .65);
-  z-index: 2;
+  background-color: rgba(199, 150, 2, .8);
+  /* z-index: 2; */
+}
+
+.services .training img {
+  width: 94px;
+  height: 94px;
+}
+
+.services .training span {
+  position: relative;
+  bottom: 1.8rem;
+}
+
+.services .training ul {
+  position: relative;
+  bottom: .5rem;
+}
+
+.services span {
+  font-family: "Kanit", system-ui;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+.services .cards ul li {
+  font-family: "Fredoka", sans-serif;
+  font-size: .9rem;
+  font-weight: lighter;
+  list-style-position: inside;
+
+  text-align: left;
+  padding: 0 1.4rem;
+}
+
+.services .cards button {
+  background-color: rgb(147, 112, 6);
+  border: none;
+  cursor: pointer;
+  width: 46%;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 8px;
+  padding: .54rem;
+
+  transition: .3s;
+}
+
+.services .cards button:hover {
+  background-color: #971d1d;
+}
+
+@media (max-width: 1000px) {
+  
+  .services::before {
+    position: absolute;
+    content: '';
+    background: url(../../images/background-images/middle-bg.jpg) no-repeat center center/cover;
+    width: 97vw;
+    height: 40.3rem;
+  }
+  
+  .services .backgroud-middle-banner {
+    width: 100%;
+    height: 55rem;
+  
+    background-color: rgba(242, 221, 99, .95);
+  }
+
+  .services .content {
+    position: relative;
+    width: 30.4rem;
+    height: 54.6rem;
+  
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+    gap: .4rem;
+
+    justify-content: center;
+  
+    background-color: rgba(255, 255, 255, 0.67);
+  }
+
+  .worker .background-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .4rem 0;
+  
+    background-color: rgba(199, 150, 2, .8);
+    /* z-index: 2; */
+  
+    /* border: 2px solid red; */
+  }
+
+  .energy .background-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .2rem;
+    padding-bottom: 1.2rem;
+  
+    background-color: rgba(199, 150, 2, .8);
+  }
+  
+  .facilities .background-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1.3rem 0;
+  
+    background-color: rgba(199, 150, 2, .8);
+  }
+  
+  .training .background-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.3rem;
+  
+    background-color: rgba(199, 150, 2, .8);
+    /* z-index: 2; */
+  }
+  
+  .services span {
+    font-family: "Kanit", system-ui;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .2rem;
+  }
+  
+  .services .cards ul li {
+    font-family: "Fredoka", sans-serif;
+    font-size: .9rem;
+    font-weight: lighter;
+    list-style-position: inside;
+  
+    text-align: left;
+    padding: 0 1.4rem;
+  }
+}
+
+@media (max-width: 516px) {
+  .services::before {
+    position: absolute;
+    content: '';
+    background: url(../../images/background-images/middle-bg.jpg) no-repeat center center/cover;
+    width: 110vw;
+    height: 40.3rem;
+  }
+  
+  .services .backgroud-middle-banner {
+    width: 110%;
+    height: 100rem;
+  
+    background-color: rgba(242, 221, 99, .95);
+  }
+
+  .services .content {
+    position: relative;
+    width: 100%;
+    height: 100rem;
+  
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+
+    justify-content: center;
+  
+    background-color: rgba(255, 255, 255, 0.67);
+  }
+
+  .services .cards ul li {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    list-style-position: inside;
+  
+    text-align: left;
+    padding: 0 1.4rem;
+  }
+
+  .services .title-worker-desktop {
+    display: none;
+  }
+
+  .services .title-worker-mobile {
+    display: block;
+  }
+
+  .services .cards button {
+    background-color: rgb(147, 112, 6);
+    border: none;
+    cursor: pointer;
+    width: 33%;
+  
+    font-family: "Fredoka", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    padding: .54rem;
+  
+    transition: .3s;
+  }
 }

@@ -1,10 +1,11 @@
 import Header from "../../components/header/Header"
 import Banner from "../../components/banner-top-homepage/Banner-top-homepage"
+import Services from "../../components/services/Services"
+import Our_mission_banner from "../../components/our_mission_banner/our_mission_banner"
 
 import './home-page.css'
-import Services from "../../components/services/Services"
 
-function Homepage() {
+const Homepage = () => {
 
   return (
     <>
@@ -12,6 +13,7 @@ function Homepage() {
       <main className="homepage">
         <Banner />
         <Services />
+        <Our_mission_banner />
       </main>
     </>
   )

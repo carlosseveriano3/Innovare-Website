@@ -15,8 +15,11 @@ const Services = () => {
             <div className='card-content'>
               <div className='background-card'>
                 <img src={worker} alt="" />
-                <span>
-                  CONSULTORIA, INSPEÇÃO E PROJETOS
+                <span className='title-worker-desktop'>
+                  CONSULTORIA, <br /> INSPEÇÃO E <br /> PROJETOS
+                </span>
+                <span className='title-worker-mobile'>
+                  CONSULTORIA, INSPEÇÃO E <br /> PROJETOS
                 </span>
                 <ul>
                   <li>Gestão de Projetos</li>

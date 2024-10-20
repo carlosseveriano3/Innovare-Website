@@ -56,7 +56,9 @@ header {
 }
 
 .hide {
-  display: none;
+  position: absolute;
+  margin-left: 999px;
+  transition: .5s ease-in;
 }
 
 @media (max-width: 730px) {
@@ -114,7 +116,7 @@ header {
     position: absolute;
     right: 0;
     width: 292px;
-    height: 184vh;
+    height: 200vh;
     transition: .3s ease;
     z-index: 1;
   }
@@ -141,5 +143,32 @@ header {
     border-bottom: 2px solid;
     z-index: 2;
     transition: .3s ease-in-out;
+  }
+}
+
+@media (max-width: 516px) {
+  header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 7.5rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(35, 35, 35, 0.667);
+    transition: .3s ease-in;
+    z-index: 999;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem 0 7.5rem;
+    width: 100%;
+    max-width: 70rem;
+    height: 100%;
+    /* border: 2px solid; */
   }
 }
