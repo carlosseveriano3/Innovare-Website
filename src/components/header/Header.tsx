@@ -39,7 +39,7 @@ const Header = () => {
               alt="logo" 
               className='header-logo'
             />
-          </Link>
+          </Link> 
           <div className={isOpen ? 'menu-container-open' : 'menu-container'}>
             <span className='menu'>MENU</span>
             {isOpen ? (

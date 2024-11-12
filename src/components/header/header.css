@@ -56,9 +56,7 @@ header {
 }
 
 .hide {
-  position: absolute;
-  margin-left: 999px;
-  transition: .5s ease-in;
+  right: -100%;
 }
 
 @media (max-width: 730px) {
@@ -113,11 +111,11 @@ header {
 
   .dropdown-menu-container {
     background-color: #000000;
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 292px;
     height: 200vh;
-    transition: .3s ease;
+    transition: .3s ease-out;
     z-index: 1;
   }
 

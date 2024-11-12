@@ -1,0 +1,36 @@
+.partners {
+  position: relative;
+  height: 10rem;
+  border: 2px solid red;
+  color: black;
+}
+
+.partners .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.partners span {
+  position: relative;
+  top: 1.5rem;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(98, 98, 98);
+
+  /* display: flex;
+  justify-content: center; */
+
+  /* border: 2px solid red; */
+}
+
+.partners .images {
+  display: flex;
+  gap: 2rem;
+  
+  /* border: 2px solid red; */
+}
