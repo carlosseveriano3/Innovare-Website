@@ -1,5 +1,4 @@
-import img from '../../images/backgroung-images/top-bg.png'
-import './banner-top-homepage.css'
+import './banner_top_homepage.css'
 
 const BannerTopHomepage = () => {
   return (

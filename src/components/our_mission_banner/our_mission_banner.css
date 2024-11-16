@@ -42,9 +42,7 @@
 
 @media (max-width: 1000px) {
   .our-mission {
-    position: relative;
     top: 22.6rem;
-    height: 17.85rem;
     /* background-color: darkgray; */
   }
 

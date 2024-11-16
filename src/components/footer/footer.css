@@ -1,0 +1,9 @@
+.footer {
+  position: relative;
+  height: 15.3rem;
+  background-color: rgb(59, 59, 59);
+}
+
+.footer .content {
+  width: 70%;
+}

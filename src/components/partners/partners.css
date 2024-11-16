@@ -1,21 +1,22 @@
 .partners {
   position: relative;
-  height: 10rem;
-  border: 2px solid red;
+  height: 9.5rem;
+  /* border: 2px solid red; */
   color: black;
 }
 
 .partners .content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: left;
   gap: 2.5rem;
   align-items: center;
+  top: .3rem;
 }
 
 .partners span {
   position: relative;
-  top: 1.5rem;
+  top: 1.4rem;
 
   font-family: "Fredoka", sans-serif;
   font-size: 1.2rem;
@@ -33,4 +34,16 @@
   gap: 2rem;
   
   /* border: 2px solid red; */
+}
+
+@media (max-width: 1000px) {
+  .partners {
+    top: 22.6rem;
+  }
+}
+
+@media (max-width: 516px) {
+  .partners {
+    top: 67.6rem;
+  }
 }
