@@ -5,5 +5,50 @@
 }
 
 .footer .content {
-  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  /* border: 2px solid red; */
+}
+
+.footer ul {
+  list-style-type: disc;
+  padding-left: 40px !important;
+}
+
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+.footer .line-bar-contato {
+  position: relative;
+  left: 25px;
+  top: 5px;
+}
+
+.footer .line-bar-institucional {
+  margin-top: 7px;
+}
+
+.footer .line-bar-institucional::before {
+  content: '';
+  width: 4.2px;
+  height: 165px;
+  display: block;
+  background-color: #f2b600; 
+  position: absolute;
+  transform: translate(-40px);
+}
+
+.footer .line-bar-contato::before {
+  content: '';
+  width: 4.2px;
+  height: 165px;
+  display: block;
+  background-color: #f2b600; 
+  position: absolute;
+  transform: translate(-23px);
 }
