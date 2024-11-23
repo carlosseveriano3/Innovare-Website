@@ -4,8 +4,6 @@ import Services from "../../components/services/Services"
 import Our_mission_banner from "../../components/our_mission_banner/Our_mission_banner"
 import Partners from "../../components/partners/Partners"
 import Contact_us from "../../components/contact-us/Contact_us"
-
-import './home_page.css'
 import Footer from "../../components/footer/Footer"
 
 const Homepage = () => {

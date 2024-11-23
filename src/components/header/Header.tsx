@@ -59,7 +59,7 @@ const Header = () => {
           
           <nav className={isOpen ? 'dropdown-menu' : 'nav-content'}>
             <Link to='/'>PRINCIPAL</Link>
-            <Link to='/'>SOBRE</Link>
+            <Link to='sobre'>SOBRE</Link>
             <Link to='/'>SOLUÇÕES</Link>
             <Link to='/'>CLIENTES</Link>
             <Link to='/'>CONTATO</Link>
