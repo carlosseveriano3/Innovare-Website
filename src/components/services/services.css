@@ -8,13 +8,13 @@
   position: absolute;
   content: '';
   background: url(../../images/background-images/middle-bg.jpg) no-repeat center center/cover;
-  width: 98vw;
+  width: 100vw;
   height: 32.4rem;
   z-index: -1;
 }
 
 .services .backgroud-middle-banner {
-  width: 100%;
+  width: 100vw;
   height: 32.4rem;
 
   display: flex;
@@ -32,6 +32,7 @@
   display: grid;
   grid-template-columns: 15rem 15rem 15rem 15rem;
   gap: .4rem;
+  right: .35rem;
 
   background-color: rgba(255, 255, 255, 0.67);
 
@@ -238,12 +239,12 @@
     position: absolute;
     content: '';
     background: url(../../images/background-images/middle-bg.jpg) no-repeat center center/cover;
-    width: 97vw;
+    width: 100vw;
     height: 40.3rem;
   }
   
   .services .backgroud-middle-banner {
-    width: 100%;
+    width: 100vw;
     height: 55rem;
   
     background-color: rgba(242, 221, 99, .95);
@@ -345,15 +346,16 @@
 
 @media (max-width: 516px) {
   .services::before {
+    display: none;
     position: absolute;
     content: '';
     background: url(../../images/background-images/middle-bg.jpg) no-repeat center center/cover;
-    width: 110vw;
+    width: 100vw;
     height: 40.3rem;
   }
   
   .services .backgroud-middle-banner {
-    width: 110%;
+    width: 100vw;
     height: 100rem;
   
     background-color: rgba(242, 221, 99, .95);

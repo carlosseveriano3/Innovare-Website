@@ -10,3 +10,7 @@ html {
   color: #ffffff;
   min-height: 200vh;
 }
+
+body {
+  overflow-x: hidden;
+}

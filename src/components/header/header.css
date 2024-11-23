@@ -15,12 +15,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   min-height: 7.5rem;
   top: 0;
   left: 0;
   background-color: rgba(35, 35, 35, 0.667);
-  transition: .3s ease-in;
+  /* transition: .3s ease-in; */
   z-index: 999;
 }
 
@@ -150,7 +150,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     min-height: 7.5rem;
     top: 0;
     left: 0;
@@ -164,7 +164,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 10rem 0 7.5rem;
-    width: 100%;
+    width: 100vw;
     max-width: 70rem;
     height: 100%;
     /* border: 2px solid; */

@@ -1,5 +1,6 @@
 .partners {
   position: relative;
+  width: 100vw;
   height: 9.5rem;
   /* border: 2px solid red; */
   color: black;
@@ -45,5 +46,19 @@
 @media (max-width: 516px) {
   .partners {
     top: 67.6rem;
+  }
+
+  .partners .images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    /* border: 2px solid red; */
+  }
+}
+
+@media (max-width: 499px) {
+  .partners img {
+    width: 6.5rem;
   }
 }

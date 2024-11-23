@@ -1,6 +1,7 @@
 .banner {
   position: relative;
   height: 27.1rem;
+  width: 100vw;
   /* border: 2px solid red; */
 }
 
@@ -8,7 +9,7 @@
   position: absolute;
   content: '';
   background: url(../../images/background-images/top-bg.png) no-repeat center center/cover;
-  width: 98.9vw;
+  width: 100vw;
   height: 27.1rem;
   z-index: -1;
   filter: brightness(19%);
@@ -66,7 +67,7 @@
     position: absolute;
     content: '';
     background: url(../../images/background-images/top-bg.png) no-repeat center center/cover;
-    width: 98.3vw;
+    width: 100vw;
     height: 27.1rem;
     z-index: -1;
     filter: brightness(19%);
@@ -84,7 +85,7 @@
     position: absolute;
     content: '';
     background: url(../../images/background-images/top-bg.png) no-repeat center center/cover;
-    width: 110vw;
+    width: 100vw;
     height: 27.1rem;
     z-index: -1;
     filter: brightness(19%);
@@ -102,7 +103,7 @@
 
   .banner .content p:first-child {
     font-family: "Fredoka", sans-serif;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: 370;
     letter-spacing: 0.6rem;
     color: #F2B600;
@@ -112,7 +113,7 @@
   
   .banner .content p:nth-child(2) {
     font-family: "Kanit", system-ui;
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
     margin-bottom: -.4rem;
@@ -120,7 +121,34 @@
   
   .banner .content p:nth-child(3) {
     font-family: "Fredoka", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 370;
+    letter-spacing: 0.30rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner .content p:first-child {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 370;
+    letter-spacing: 0.6rem;
+    color: #F2B600;
+    margin-top: -1rem;
+    margin-bottom: -.4rem;
+  }
+  
+  .banner .content p:nth-child(2) {
+    font-family: "Kanit", system-ui;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    margin-bottom: -.4rem;
+  }
+  
+  .banner .content p:nth-child(3) {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.1rem;
     font-weight: 370;
     letter-spacing: 0.30rem;
   }

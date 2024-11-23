@@ -8,13 +8,13 @@
   position: absolute;
   content: '';
   background: url(../../images/background-images/our-mission.png) no-repeat center center/cover;
-  width: 100%;
+  width: 100vw;
   height: 17.85rem;
   z-index: -1;
 }
 
 .our-mission .background-gray {
-  width: 100%;
+  width: 100vw;
   height: 17.85rem;
 
   display: flex;
@@ -55,7 +55,7 @@
 
 @media (max-width: 516px) {
   .our-mission .background-gray {
-    width: 110%;
+    width: 100vw;
     height: 17.85rem;
   
     display: flex;
@@ -69,7 +69,7 @@
     position: absolute;
     content: '';
     background: url(../../images/background-images/our-mission.png) no-repeat center center/cover;
-    width: 110%;
+    width: 100vw;
     height: 17.85rem;
     z-index: -1;
   }

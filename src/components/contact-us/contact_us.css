@@ -1,6 +1,7 @@
 .contact-us {
   position: relative;
   height: 9.7rem;
+  width: 100vw;
   /* border: 2px solid red; */
 }
 
@@ -9,13 +10,13 @@
   content: '';
   background: url(../../images/background-images/bottom-bg.jpg) no-repeat center center/cover;
   /* opacity: 0.1; */
-  width: 100%;
+  width: 100vw;
   height: 9.7rem;
   z-index: -1;
 }
 
 .contact-us .gradient-background {
-  width: 100%;
+  width: 100vw;
   height: 9.7rem;
 
   display: flex;
@@ -23,6 +24,8 @@
   align-items: center;
 
   background-image: linear-gradient(to right, rgba(255, 204, 0, 0.893), rgba(59, 58, 58, 0.85));
+
+  /* border: 2px solid red; */
 }
 
 .contact-us .content {
@@ -62,9 +65,25 @@
   }
 }
 
+@media (max-width: 580px) {
+  .contact-us span {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 516px) {
   .contact-us {
     top: 67.6rem;
+  }
+
+  .contact-us span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .contact-us .content {
+    width: 80vw;
   }
 
   .contact-us span {
