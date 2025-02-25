@@ -1,7 +1,6 @@
 import worker from '../../images/icons/worker.png'
 import energy from '../../images/icons/energy_transition.png'
 import facilities from '../../images/icons/facilities.png'
-import training from '../../images/icons/training.png'
 
 import "./services.css"
 
@@ -78,26 +77,6 @@ const Services = () => {
               </div>
             </div>
           </div>
-
-          {/* <div className='cards training'>
-            <div className='card-content'>
-              <div className='background-card'>
-                <img src={training} alt="" />
-                <span>
-                  TREINAMENTOS
-                </span>
-                <ul>
-                  <li>Formação de Brigada de Incêndio</li>
-                  <li>Prontuário de Instalações Elétrica</li>
-                  <li>Segurança em Subestações</li>
-                  <li>Normas Regulamentadoras</li>
-                </ul>
-                <button>
-                  Saiba Mais
-                </button>
-              </div>
-            </div>
-          </div> */}
 
         </div>    
       </div>
