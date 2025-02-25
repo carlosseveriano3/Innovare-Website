@@ -6,9 +6,9 @@ const BannerTopHomepage = () => {
       <section className="banner">
         <div className='content'>
           <div className='paragraphs'>
-            <p>SUA SOLUÇÃO EM </p>
-            <p>ENGENHARIA </p>
-            <p>PREDIAL E INDUSTRIAL</p>
+            <p>EXCELÊNCIA E INOVAÇÃO </p>
+            <p>ENGENHARIA PARA UM AMBIENTE MAIS EFICIENTE </p>
+            {/* <p>SOB DEMANDA</p> */}
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import HomePage from './pages/homepage/Home_page'
-import About from './pages/about/about'
+import About from './pages/about/About'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <HomePage />
   }, 
   {
-    path: 'sobre',
+    path: ':search',
     element: <About />
   }
 ])

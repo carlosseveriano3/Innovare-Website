@@ -8,7 +8,7 @@ const Partners = () => {
   return (
     <section className="partners">
       <div className='content'>
-        <span className="title">Conheça alguns de nossos parceiros</span>
+        <span className="title">Conheça alguns de nossos clientes e parceiros</span>
         <div className='images'>
           <img src={brand1} alt="engeman" />
           <img src={brand2} alt="engeteles" />

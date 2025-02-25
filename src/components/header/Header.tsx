@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useEffect, useMemo, useState } from 'react';
 
-import hesq from '../../images/logo/hesq-logo.png'
+import logo from '../../images/logo/logo-innovareAtivo 1.png'
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -10,6 +10,11 @@ import './header.css'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
+  const [isBackgroundSobreActive, setIsBackgroundSobreActive] = useState(false);
+  
+  const {search} = useParams()
+
+  console.log(isBackgroundSobreActive)
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -29,13 +34,19 @@ const Header = () => {
     }
   }, [windowWidth])
 
+  useEffect(() => {
+    if (search === 'sobre') {
+      setIsBackgroundSobreActive(true)
+    }
+  }, [])
+
   return (
-    <header>
+    <header className={isBackgroundSobreActive ? 'background-sobre' : ''}>
       <div className={isOpen ? 'dropdown-menu-container' : 'hide'}></div>
         <div className='header-content'>
           <Link to={'/'}>
             <img 
-              src={hesq} 
+              src={logo} 
               alt="logo" 
               className='header-logo'
             />
@@ -56,11 +67,14 @@ const Header = () => {
             </button>
             )}
           </div>
+          <div className='centro-oeste'>
+            CENTRO-OESTE | NORDESTE
+          </div>
           
           <nav className={isOpen ? 'dropdown-menu' : 'nav-content'}>
             <Link to='/'>PRINCIPAL</Link>
-            <Link to='sobre'>SOBRE</Link>
-            <Link to='/'>SOLUÇÕES</Link>
+            <Link to='/sobre'>SOBRE</Link>
+            <Link to='/'>SERVIÇOS</Link>
             <Link to='/'>CLIENTES</Link>
             <Link to='/'>CONTATO</Link>
           </nav>

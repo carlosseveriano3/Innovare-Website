@@ -14,9 +14,9 @@ const Services = () => {
           <div className='cards worker'>
             <div className='card-content'>
               <div className='background-card'>
-                <img src={worker} alt="" />
+              <img src={worker} alt="" />
                 <span className='title-worker-desktop'>
-                  CONSULTORIA, <br /> INSPEÇÃO E <br /> PROJETOS
+                  ENGENHARIA
                 </span>
                 <span className='title-worker-mobile'>
                   CONSULTORIA, INSPEÇÃO E <br /> PROJETOS
@@ -41,7 +41,8 @@ const Services = () => {
               <div className='background-card'>
                 <img src={energy} alt="" />
                 <span>
-                  ENERGIA
+                  CLIMATIZAÇÃO E <br />
+                  REFRIGERAÇÃO
                 </span>
                 <ul>
                   <li>Avaliação em Subestações</li>
@@ -62,7 +63,7 @@ const Services = () => {
               <div className='background-card'>
                 <img src={facilities} alt="" />
                 <span>
-                  INSTALAÇÃO, MANUTENÇÃO E FACILITIES
+                  SUSTENTABILIDADE
                 </span>
                 <ul>
                   <li>Gerenciamento</li>
@@ -78,7 +79,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className='cards training'>
+          {/* <div className='cards training'>
             <div className='card-content'>
               <div className='background-card'>
                 <img src={training} alt="" />
@@ -96,7 +97,7 @@ const Services = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>    
       </div>
