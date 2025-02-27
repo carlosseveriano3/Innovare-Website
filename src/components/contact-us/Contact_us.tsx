@@ -12,7 +12,7 @@ const Contact_us = () => {
           </span>
           <div className="wpp">
             <img src={wapp} alt="Whatsapp" />
-            <span>(85) 98788-7078</span>
+            <span>(XX) XXXXX-XXXX</span>
           </div>
         </div>
       </div>
