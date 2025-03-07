@@ -1,8 +1,8 @@
 
-Trabalho freelance feito para a empresa Innovare Gestão e Engenharia.
+Volunteer job made for Innovare Gestão e Engenharia company
 
  - Stacks: React, CSS, TypeScript.
- - Site criado com o intuito de mostrar os serviços que a empresa oferece, e seus valores.
+ - Website made with the purpose of show the services that the company provide, and their values.
 
 <br />
 
