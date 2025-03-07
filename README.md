@@ -1,8 +1,8 @@
 
-Volunteer job made for Innovare Gestão e Engenharia company
+This project was done with the purpose of putting my knowledge into practice.
 
  - Stacks: React, CSS, TypeScript.
- - Website made with the purpose of show the services that the company provide, and their values.
+ - Website made to show the services that the company provide, and their values.
 
 <br />
 
